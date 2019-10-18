@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+
+  
+<style>
+    .switch {
+      background: teal;
+      height: 100px;
+      width: 100px;
+      transition: 1.2s;
+     }
+
+    #switchborder {
+    background: black;
+    height: 100px;
+    width: 200px;
+    border: 5px solid black;
+    margin-bottom: 1em;
+    }
+
+    .success {
+      background: rgb(238, 187, 20);
+      transform: translateX(100px); /*from nomal spot move 100px on x axis*/
+      /* transform: scale(1.3) rotate(30deg); */
+    }
+
+    .cancel {
+      background:teal;
+      transition: 1.2s; /*speed it moves */
+    }
+
+  
+</style>
+</head>
+<body>
+
+  <div id='switchborder'><div id="switch" class="switch"></div></div>
+  
+  <button id='launch-missiles'>Launch</button>
+  <button id='stop-missiles'>Stop</button>
+    
+</body>
+
+  <script>
+    const launchButton = document.querySelector("#launch-missiles")
+    const switchToggle = document.querySelector('#switch')
+    launchButton.addEventListener('click', function() {
+      console.log('HIT!')
+      switchToggle.className = "switch success"
+    })
+  
+    const stopButton = document.querySelector("#stop-missiles")
+    const switchToggle2 = document.querySelector('#switch')
+    stopButton.addEventListener('click', function() {
+      console.log('Self-Destruct!')
+      switchToggle2.className = "switch cancel"
+    })
+
+  </script>
+
+</html>

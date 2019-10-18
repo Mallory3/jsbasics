@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Mountains</h1>
+
+<div id="mountains"></div>
+
+<script>
+  const MOUNTAINS = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+  ];
+
+// function listMountains(name) {
+//   const nameM = MOUNTAINS.name
+//   for (let name = 0; name < name.length; name++) {
+//     // const element = array[index];
+//   }
+//   return name
+// }
+// console.log(listMountains(name))
+
+
+
+
+
+
+
+  // Your code here
+ //1. table
+  //get location
+const section = document.querySelector('#mountains')
+
+//create the thing you want to put in location
+const newTable = document.createElement('table')
+newTable.className = 'newsTable'
+
+// add element to that location
+section.appendChild(newTable)
+
+//2. tr
+  //get location
+const section1 = document.querySelector('.newsTable')
+
+//create the thing you want to put in location
+const inTable = document.createElement('tr')
+inTable.className = 'newTr'
+
+const secondTable = document.createElement('tr')
+secondTable.className = 'newTr2'
+
+// add element to that location
+section1.appendChild(inTable)
+section1.appendChild(secondTable)
+
+
+//3. th
+  //get location
+  const section2 = document.querySelector('.newTr')
+
+//create the thing you want to put in location
+const inTable2 = document.createElement('th')
+inTable2.textContent ='name'
+inTable2.className = 'newTh'
+
+const inTable3 = document.createElement('th')
+inTable3.textContent ='height'
+inTable3.className = 'newTh'
+
+const inTable4 = document.createElement('th')
+inTable4.textContent ='place'
+inTable4.className = 'newTh'
+
+// add element to that location
+section2.appendChild(inTable2)
+section2.appendChild(inTable3)
+section2.appendChild(inTable4)
+
+//3. td
+
+const section3 =document.querySelector('.newTr2')
+
+//create the things in that location
+const secondTable2 = document.createElement('td')
+// secondTable2.textContent ="Kilimanjaro"
+secondTable2.className = 'newTd'
+
+const secondTable3 = document.createElement('td')
+secondTable3.textContent ="5895"
+secondTable3.className = 'newTd'
+
+const secondTable4 = document.createElement('td')
+secondTable4.textContent ="Tanzania"
+secondTable4.className = 'newTd'
+
+//add element to that location
+section3.appendChild(secondTable2)
+section3.appendChild(secondTable3)
+section3.appendChild(secondTable4)
+debugger
+
+//2. tr
+
+
+//3. td
+ 
+
+ 
+
+//   function createentirerow() {
+//   const tr = createtablerow("name", "place", "height")
+//   const tdname = createdata(MOUNTAINS.name)
+//   const tdheight = createdata(MOUNTAINS.height)
+//   const tdplace = createdata(MOUNTAINS.place)
+//   tr.appendChild(tdname)
+//   tr.appendChild(tdheight)
+//   tr.appendChild(tdplace)
+//   return tr
+// }
+
+// const section2 = document.querySelector('.newTr')
+// const table = document.createElement("table")
+
+//   for (let index = 0; index < MOUNTAINS.length; index++) {
+//     const mountaindata = MOUNTAINS[index];
+//     const completetable = createentirerow(MOUNTAINS);
+//     table.appendChild(completetable)
+//     mountaintable.appendChild(table)
+//   }
+
+ 
+ 
+ 
+ 
+ 
+</script>
+
+</body>
+</html>
